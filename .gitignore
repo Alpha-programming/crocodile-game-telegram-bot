@@ -5,5 +5,5 @@ __pycache__/
 .vscode/
 vscode/
 .env
-user.db
+users.db
 *_1M.txt
