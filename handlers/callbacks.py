@@ -1,6 +1,5 @@
 from aiogram.types import CallbackQuery,Message
 from aiogram import Router,F
-from aiogram.fsm.context import FSMContext
 from googletrans import Translator
 from pathlib import Path
 import random
