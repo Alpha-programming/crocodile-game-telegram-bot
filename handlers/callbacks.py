@@ -1,6 +1,6 @@
 from aiogram.types import CallbackQuery,Message
 from aiogram import Router,F
-from googletrans import Translator
+from deep_translator import  GoogleTranslator
 from pathlib import Path
 import random
 from keyboards.inline import found_kb
@@ -11,7 +11,7 @@ alpha_score = 0
 beta_Score = 0
 
 router = Router()
-translator = Translator()
+translator = GoogleTranslator()
 
 with open(f'{BASE_DIR}/easy_words_1M.txt', 'r', encoding='utf-8') as easy_file:
     easy_words = easy_file.read().splitlines()
