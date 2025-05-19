@@ -23,7 +23,7 @@ with open(f'{BASE_DIR}/hard_words_1M.txt', 'r', encoding='utf-8') as hard_file:
     hard_words = hard_file.read().splitlines()
 
 def translated_word(word):
-    return translator.translate(text=word,dest='ru',src='en').text
+    return GoogleTranslator(source='en', target='ru').translate(word)
 
 @router.callback_query(F.data.startswith('easy'))
 async def easy_level(call: CallbackQuery):
